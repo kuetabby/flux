@@ -9,7 +9,7 @@ import "./globals.css";
 
 const app_title = "";
 const app_name = "";
-const description = "";
+const description = "Your gateway to enhanced DeFi privacy and protection";
 
 export const metadata: Metadata = {
   title: app_title,

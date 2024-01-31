@@ -26,10 +26,10 @@ const contractAddress = "-";
 const pairAddress = "-";
 
 const AppFooter: React.FC<Props> = () => {
-  const telegramLink = "https://t.me/";
-  const twitterLink = "https://x.com/";
-  const mediumLink = "https://medium.com/";
-  const whitepaperLink = "https://ace-chain.gitbook.io/";
+  const telegramLink = "https://t.me/Decrepify_Official";
+  const twitterLink = "https://x.com/DecrepifyTech";
+  const mediumLink = "https://medium.com/@decrepifyofficial";
+  const whitepaperLink = "/";
   const contactLink = "";
 
   if (!useIsMounted) {
