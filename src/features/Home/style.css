@@ -1,0 +1,57 @@
+.homepage-container {
+  /* @apply w-full h-full p-2 px-4 sm:p-4 m-auto; */
+  @apply w-full h-full m-auto;
+  max-width: 1440px;
+}
+
+.app-title {
+  @apply font-bold bg-lime-zest;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-ecosystem-wrapper {
+  @apply w-[47.5%] sm:w-[30%] lg:w-1/4 cursor-pointer pb-2 mx-auto;
+}
+
+.card-ecosystem-wrapper-icon {
+  @apply w-3/5 sm:w-1/2;
+}
+
+.card-ecosystem-icon {
+  @apply max-w-full h-auto opacity-50;
+}
+
+.card-ecosystem-link {
+  @apply flex items-center text-sm font-extrabold text-[#b8add2] mt-2;
+}
+
+.card-ecosystem-wrapper:hover > .card-ecosystem-link {
+  @apply text-primary;
+}
+
+.card-ecosystem-wrapper:hover
+  > .card-ecosystem-wrapper-icon
+  > .card-ecosystem-icon {
+  @apply opacity-100;
+}
+/* .card-feature-container {
+  @apply w-full sm:w-[47.5%] lg:w-[30%] h-auto mx-auto transition duration-300 cursor-pointer mb-4;
+}
+
+.card-feature-wrapper {
+  @apply w-auto h-full bg-grayscale text-white border-[3px] border-zinc-700 rounded-2xl hover:border-indigo-500;
+}
+
+.card-feature-title {
+  @apply text-base sm:text-xl font-extrabold;
+  @apply transition duration-300;
+}
+
+.card-feature-container:hover
+  > .card-feature-wrapper
+  > .chakra-card__body
+  > .card-feature-title {
+  @apply text-indigo-500;
+} */
