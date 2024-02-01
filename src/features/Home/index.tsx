@@ -18,10 +18,13 @@ import {
   // SearchOutlined,
 } from "@ant-design/icons";
 
+import YinLoader from "@/components/Loader/Custom";
+
 import { useIsMounted } from "@/hooks/useIsMounted";
 // import { useCopyText } from "@/hooks/useCopyText";
 
 import { ecosystemList } from "./constants/ecosystem";
+import { contractAddress, findUsLink, socialsLink } from "@/constants/links";
 
 // import LogoApp from "@/assets/logo-app.png";
 import Banner_1 from "@/assets/banner-1.jpg";
@@ -35,17 +38,16 @@ import "./style.css";
 
 interface Props {}
 
-const contractAddress = "-";
-const pairAddress = "-";
-
-const whitepaperLink = "/";
-
 const Home: React.FC<Props> = () => {
   const isMounted = useIsMounted();
   // const [copyContent] = useCopyText();
 
   if (!isMounted) {
-    return null;
+    return (
+      <div className="homepage-container">
+        <YinLoader />
+      </div>
+    );
   }
 
   return (
@@ -78,7 +80,7 @@ const Home: React.FC<Props> = () => {
 
           <div className="w-full text-center mx-auto mt-2">
             <Link
-              href={whitepaperLink}
+              href={socialsLink.whitepaper}
               target="_blank"
               rel="noopener noreferrer"
               // className="w-full xl:w-3/5 text-center mx-auto mt-4"
@@ -224,7 +226,7 @@ const Home: React.FC<Props> = () => {
           </div>
           <div className="w-full flex flex-wrap justify-evenly items-center bg-black bg-opacity-40 rounded-2xl mt-6">
             <Link
-              href={`https://app.uniswap.org/tokens/ethereum/${contractAddress}`}
+              href={findUsLink.uniswap}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-12"
@@ -236,7 +238,7 @@ const Home: React.FC<Props> = () => {
               />
             </Link>
             <Link
-              href={`http://dextools.io/app/ether/pair-explorer/${pairAddress}`}
+              href={findUsLink.dextools}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-[15vw] xs:h-[12.5vw] sm:h-full"
@@ -248,7 +250,7 @@ const Home: React.FC<Props> = () => {
               />
             </Link>
             <Link
-              href={`https://dexscreener.com/ethereum/${contractAddress}`}
+              href={findUsLink.dexscreener}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-[6.75em] xl:w-[7.5em] mb-2 sm:mb-0 h-12"
@@ -261,7 +263,7 @@ const Home: React.FC<Props> = () => {
             </Link>
 
             <Link
-              href={`https://etherscan.io/token/${contractAddress}#code`}
+              href={findUsLink.etherscan}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-10"
@@ -314,7 +316,7 @@ const Home: React.FC<Props> = () => {
         </div>
 
         <div
-          className={`w-full sm:px-8 lg:px-14 absolute top-[60%] sm:top-2/4 z-20 px-2 sm:px-0`}
+          className={`w-full px-2 sm:px-8 lg:px-14 absolute top-[60%] sm:top-2/4 z-20`}
         >
           <div
             className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-2`}

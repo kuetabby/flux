@@ -1,11 +1,11 @@
 import React from "react";
 
-import SwitchLoader from "@/components/Loader/Switch";
+import YinLoader from "@/components/Loader/Custom";
 
 interface Props {}
 
 const RootLoading: React.FC<Props> = () => {
-  return <SwitchLoader />;
+  return <YinLoader />;
 };
 
 export default RootLoading;

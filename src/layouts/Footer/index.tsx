@@ -8,6 +8,9 @@ import { CopyrightOutlined } from "@ant-design/icons";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
 
+import { contractAddress, findUsLink, socialsLink } from "@/constants/links";
+import { spaceGrotesk } from "@/utils/font";
+
 import AppLogo from "@/assets/logo-app.png";
 // import TwitterLogo from "@/assets/logo-twitter.png";
 // import TelegramLogo from "@/assets/logo-telegram.png";
@@ -16,22 +19,11 @@ import AppLogo from "@/assets/logo-app.png";
 // import GitbookLogo from "@/assets/logo-gitbook.png";
 // import EmailLogo from "@/assets/logo-email.png";
 
-import { spaceGrotesk } from "@/utils/font";
-
 import "./style.css";
 
 interface Props {}
 
-const contractAddress = "-";
-const pairAddress = "-";
-
 const AppFooter: React.FC<Props> = () => {
-  const telegramLink = "https://t.me/Decrepify_Official";
-  const twitterLink = "https://x.com/DecrepifyTech";
-  const mediumLink = "https://medium.com/@decrepifyofficial";
-  const whitepaperLink = "/";
-  const contactLink = "";
-
   if (!useIsMounted) {
     return null;
   }
@@ -140,7 +132,7 @@ const AppFooter: React.FC<Props> = () => {
             <div className="text-2xl font-bold">SUPPORT</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link
-                href={contactLink}
+                href={findUsLink.etherscan}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:!text-primary mb-2"
@@ -149,7 +141,7 @@ const AppFooter: React.FC<Props> = () => {
               </Link>
 
               <Link
-                href={whitepaperLink}
+                href={socialsLink.whitepaper}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:!text-primary mb-2"
@@ -176,7 +168,7 @@ const AppFooter: React.FC<Props> = () => {
               </Link> */}
 
               <Link
-                href={`https://app.uniswap.org/tokens/ethereum/${contractAddress}`}
+                href={findUsLink.uniswap}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:!text-primary mb-2"
@@ -185,7 +177,7 @@ const AppFooter: React.FC<Props> = () => {
               </Link>
 
               <Link
-                href={`http://dextools.io/app/ether/pair-explorer/${pairAddress}`}
+                href={findUsLink.dextools}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:!text-primary mb-2"
@@ -199,7 +191,7 @@ const AppFooter: React.FC<Props> = () => {
             <div className="text-2xl font-bold">SOCIALS</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link
-                href={telegramLink}
+                href={socialsLink.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:!text-primary mb-2"
@@ -207,7 +199,7 @@ const AppFooter: React.FC<Props> = () => {
                 Telegram
               </Link>
               <Link
-                href={twitterLink}
+                href={socialsLink.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:text-primary"
@@ -215,7 +207,7 @@ const AppFooter: React.FC<Props> = () => {
                 Twitter
               </Link>
               <Link
-                href={mediumLink}
+                href={socialsLink.medium}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:text-primary my-2"

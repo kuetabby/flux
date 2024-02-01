@@ -5,16 +5,18 @@ import Link from "next/link";
 import { Button, useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import clsx from "clsx";
+import { MenuOutlined } from "@ant-design/icons";
 
 import PageTabs from "../PageTabs";
 import { NavbarDrawer } from "./Drawer";
+
+import { useIsMounted } from "@/hooks/useIsMounted";
 
 import { spaceGrotesk } from "@/utils/font";
 
 import AppLogo from "@/assets/logo-app.png";
 
 import "./style.css";
-import { MenuOutlined } from "@ant-design/icons";
 
 interface Props {}
 
@@ -22,6 +24,8 @@ interface Props {}
 // const pairAddress = "";
 
 const Navbar: React.FC<Props> = () => {
+  const isMounted = useIsMounted();
+
   const {
     isOpen: isScroll,
     onOpen: onOpenScroll,
@@ -72,7 +76,7 @@ const Navbar: React.FC<Props> = () => {
         </div>
 
         <div className={clsx("!hidden sm:!flex justify-end w-2/5 lg:w-1/2")}>
-          <ConnectWallet hideTestnetFaucet />
+          {isMounted && <ConnectWallet hideTestnetFaucet />}
         </div>
 
         {/* <div className="w-1/2 lg:w-2/5 flex justify-end font-semibold">
@@ -165,15 +169,17 @@ const Navbar: React.FC<Props> = () => {
         </div> */}
 
         <div className="sm:hidden w-1/4 text-right animate-fadeInBasic">
-          <Button
-            className="bg-lime-zest hover:bg-mystic-horizon active:bg-mystic-horizon focus:bg-mystic-horizon text-white"
-            onClick={onOpenDrawer}
-          >
-            <MenuOutlined
-              className="font-extrabold text-white"
-              style={{ fontSize: "1.5em" }}
-            />
-          </Button>
+          {isMounted && (
+            <Button
+              className="bg-lime-zest hover:bg-mystic-horizon active:bg-mystic-horizon focus:bg-mystic-horizon text-white"
+              onClick={onOpenDrawer}
+            >
+              <MenuOutlined
+                className="font-extrabold text-white"
+                style={{ fontSize: "1.5em" }}
+              />
+            </Button>
+          )}
         </div>
       </div>
       <NavbarDrawer isOpen={isOpenDrawer} onClose={onCloseDrawer} />
