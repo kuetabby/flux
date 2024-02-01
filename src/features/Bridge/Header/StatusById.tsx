@@ -158,7 +158,7 @@ export const StatusOrderById: React.FC<Props> = ({ isOpen, onClose }) => {
               mr={3}
               onClick={() => refetchStatus()}
               isLoading={isLoadingStatus}
-              className="mx-auto text-white bg-lime-500 hover:bg-lime-500 active:bg-lime-500 disabled:bg-lime-500 focus:bg-lime-500 hover:disabled:bg-indigo-400"
+              className="mx-auto text-white bg-lime-500 hover:bg-lime-500 active:bg-lime-500 disabled:bg-lime-500 focus:bg-lime-500 hover:disabled:bg-lime-400"
             >
               Refresh Status
             </Button>

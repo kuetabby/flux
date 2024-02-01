@@ -48,13 +48,13 @@ export const InformationToken: React.FC<Props> = ({
   buy_tax,
   sell_tax,
   dex,
-  decimals,
+  // decimals,
   total_supply,
-  poolPriceResponse,
+  // poolPriceResponse,
 }) => {
   const info = ChainInfo[chainId as keyof typeof ChainInfo];
 
-  const poolPrice = poolPriceResponse?.data;
+  // const poolPrice = poolPriceResponse?.data;
 
   const tax = {
     buy: buy_tax ? Number(buy_tax) * 100 : "-",
@@ -134,6 +134,59 @@ export const InformationToken: React.FC<Props> = ({
                     : "unknown"}
                 </Link>
               </ListItem>
+
+              <ListItem className="w-full flex justify-between">
+                <div className="w-1/3 sm:w-2/5">Pair</div>
+                {dex && Boolean(dex.length) ? (
+                  <Link
+                    // href={`${urls.dexTools}/${info.dext}/pair-explorer/${dex[0].pair}`}
+                    href={`${info.explorer}/${
+                      chainId === SupportedChainId.AVALANCHE
+                        ? "blockchain/c/address"
+                        : "address"
+                    }/${dex[0].pair}`}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="w-3/5 sm:w-[55%] text-right text-blue-500 underline underline-offset-4"
+                  >
+                    {shortenAddress(dex[0].pair)}
+                  </Link>
+                ) : (
+                  "-"
+                )}
+                {/* <Link
+                  href={`${info.explorer}/${
+                    chainId === SupportedChainId.AVALANCHE
+                      ? "blockchain/c/address"
+                      : "token"
+                  }/${contractAddress ?? "-"}`}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="w-3/5 sm:w-[55%] text-right text-blue-500 underline underline-offset-4"
+                >
+                  {contractAddress
+                    ? shortenAddress(contractAddress, 3)
+                    : "unknown"}
+                </Link> */}
+              </ListItem>
+
+              {/* {dex && Boolean(dex.length) ? (
+              <Link
+                // href={`${urls.dexTools}/${info.dext}/pair-explorer/${dex[0].pair}`}
+                href={`${info.explorer}/${
+                  chainId === SupportedChainId.AVALANCHE
+                    ? "blockchain/c/address"
+                    : "address"
+                }/${dex[0].pair}`}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="w-3/5 sm:w-[55%] text-right text-blue-500 underline underline-offset-4"
+              >
+                {shortenAddress(dex[0].pair)}
+              </Link>
+            ) : (
+              "-"
+            )} */}
             </List>
           </div>
 
@@ -192,7 +245,7 @@ export const InformationToken: React.FC<Props> = ({
               </div>
             </ListItem>
 
-            <ListItem className="w-full flex flex-col">
+            {/* <ListItem className="w-full flex flex-col">
               <div className="w-full">Price</div>
               <div className="w-full font-bold ">
                 {!!poolPrice?.price && !!decimals
@@ -203,7 +256,7 @@ export const InformationToken: React.FC<Props> = ({
                     }`
                   : "-"}
               </div>
-            </ListItem>
+            </ListItem> */}
 
             {/* <ListItem className="w-full flex flex-col">
                     <div className="w-full">Circulating Supply</div>

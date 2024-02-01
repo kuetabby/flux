@@ -35,7 +35,7 @@ import {
   DexToolsPoolPriceResponse,
 } from "./models";
 import { InformationToken } from "./InformationToken";
-import { InformationTrade } from "./InformationTrade";
+// import { InformationTrade } from "./InformationTrade";
 
 interface Props {
   scanResponse: GoPlusTokenResponse;
@@ -71,128 +71,128 @@ export const Information: React.FC<Props> = ({
   const info = ChainInfo[chainId as keyof typeof ChainInfo];
   const isEmptyResponse = Object.keys(scanResponse).length === 0;
 
-  const { data: poolPriceResponse, isFetching: isPoolPriceLoading } = useQuery<
-    DexToolsPoolPriceResponse,
-    {}
-  >(
-    [chainId, contractAddress, dex, "pool price"],
-    async () => {
-      const request = await axios.get(`/api/pool/price`, {
-        params: {
-          chain: info.dexapi,
-          poolAddress: dex[0].pair,
-        },
-      });
-      const response = await request.data;
-      // console.log(response, "response");
-      return response;
-    },
-    {
-      onError: (error: any) => {
-        if (error.response) {
-          toast({
-            title:
-              error.response?.data?.description ??
-              `Something went wrong! Please try Again`,
-            status: "error",
-          });
+  // const { data: poolPriceResponse, isFetching: isPoolPriceLoading } = useQuery<
+  //   DexToolsPoolPriceResponse,
+  //   {}
+  // >(
+  //   [chainId, contractAddress, dex, "pool price"],
+  //   async () => {
+  //     const request = await axios.get(`/api/pool/price`, {
+  //       params: {
+  //         chain: info.dexapi,
+  //         poolAddress: dex[0].pair,
+  //       },
+  //     });
+  //     const response = await request.data;
+  //     // console.log(response, "response");
+  //     return response;
+  //   },
+  //   {
+  //     onError: (error: any) => {
+  //       if (error.response) {
+  //         toast({
+  //           title:
+  //             error.response?.data?.description ??
+  //             `Something went wrong! Please try Again`,
+  //           status: "error",
+  //         });
 
-          return error.response?.data?.description;
-        }
-        toast({
-          title: error.message ?? `Something went wrong! Please try Again`,
-          status: "error",
-        });
+  //         return error.response?.data?.description;
+  //       }
+  //       toast({
+  //         title: error.message ?? `Something went wrong! Please try Again`,
+  //         status: "error",
+  //       });
 
-        return error.message;
-      },
-      enabled: !!chainId && !isEmptyResponse && !!Boolean(dex?.length),
-      refetchOnWindowFocus: false,
-    }
-  );
+  //       return error.message;
+  //     },
+  //     enabled: !!chainId && !isEmptyResponse && !!Boolean(dex?.length),
+  //     refetchOnWindowFocus: false,
+  //   }
+  // );
 
   // console.log(poolPriceResponse, "poolPriceResponse");
 
-  const { data: tokenInfoResponse, isFetching: isTokenInfoLoading } = useQuery<
-    DexToolsTokenInfoResponse,
-    {}
-  >(
-    [chainId, contractAddress, "info"],
-    async () => {
-      const request = await axios.get(`/api/token/info`, {
-        params: {
-          chain: info.dexapi,
-          contractAddress,
-        },
-      });
-      const response = await request.data;
-      // console.log(response, "response");
-      return response;
-    },
-    {
-      onError: (error: any) => {
-        if (error.response) {
-          toast({
-            title:
-              error.response?.data?.description ??
-              `Something went wrong! Please try Again`,
-            status: "error",
-          });
+  // const { data: tokenInfoResponse, isFetching: isTokenInfoLoading } = useQuery<
+  //   DexToolsTokenInfoResponse,
+  //   {}
+  // >(
+  //   [chainId, contractAddress, "info"],
+  //   async () => {
+  //     const request = await axios.get(`/api/token/info`, {
+  //       params: {
+  //         chain: info.dexapi,
+  //         contractAddress,
+  //       },
+  //     });
+  //     const response = await request.data;
+  //     // console.log(response, "response");
+  //     return response;
+  //   },
+  //   {
+  //     onError: (error: any) => {
+  //       if (error.response) {
+  //         toast({
+  //           title:
+  //             error.response?.data?.description ??
+  //             `Something went wrong! Please try Again`,
+  //           status: "error",
+  //         });
 
-          return error.response?.data?.description;
-        }
-        toast({
-          title: error.message ?? `Something went wrong! Please try Again`,
-          status: "error",
-        });
+  //         return error.response?.data?.description;
+  //       }
+  //       toast({
+  //         title: error.message ?? `Something went wrong! Please try Again`,
+  //         status: "error",
+  //       });
 
-        return error.message;
-      },
-      enabled: !!chainId && !isEmptyResponse,
-      refetchOnWindowFocus: false,
-    }
-  );
+  //       return error.message;
+  //     },
+  //     enabled: !!chainId && !isEmptyResponse,
+  //     refetchOnWindowFocus: false,
+  //   }
+  // );
 
-  const { data: tokenResponse, isFetching: isTokenLoading } = useQuery<
-    DexToolsTokenResponse,
-    {}
-  >(
-    [chainId, contractAddress, "token"],
-    async () => {
-      const request = await axios.get(`/api/token`, {
-        params: {
-          chain: info.dexapi,
-          contractAddress,
-        },
-      });
-      const response = await request.data;
-      // console.log(response, "response");
-      return response;
-    },
-    {
-      onError: (error: any) => {
-        if (error.response) {
-          toast({
-            title:
-              error.response?.data?.description ??
-              `Something went wrong! Please try Again`,
-            status: "error",
-          });
+  // const { data: tokenResponse, isFetching: isTokenLoading } = useQuery<
+  //   DexToolsTokenResponse,
+  //   {}
+  // >(
+  //   [chainId, contractAddress, "token"],
+  //   async () => {
+  //     const request = await axios.get(`/api/token`, {
+  //       params: {
+  //         chain: info.dexapi,
+  //         contractAddress,
+  //       },
+  //     });
+  //     const response = await request.data;
+  //     // console.log(response, "response");
+  //     return response;
+  //   },
+  //   {
+  //     onError: (error: any) => {
+  //       if (error.response) {
+  //         toast({
+  //           title:
+  //             error.response?.data?.description ??
+  //             `Something went wrong! Please try Again`,
+  //           status: "error",
+  //         });
 
-          return error.response?.data?.description;
-        }
-        toast({
-          title: error.message ?? `Something went wrong! Please try Again`,
-          status: "error",
-        });
+  //         return error.response?.data?.description;
+  //       }
+  //       toast({
+  //         title: error.message ?? `Something went wrong! Please try Again`,
+  //         status: "error",
+  //       });
 
-        return error.message;
-      },
-      enabled:
-        !!chainId && !isEmptyResponse && !!tokenInfoResponse?.data?.totalSupply,
-      refetchOnWindowFocus: false,
-    }
-  );
+  //       return error.message;
+  //     },
+  //     enabled:
+  //       !!chainId && !isEmptyResponse && !!tokenInfoResponse?.data?.totalSupply,
+  //     refetchOnWindowFocus: false,
+  //   }
+  // );
 
   return (
     <div className="w-full lg:w-[90%] mx-auto mt-10 relative">
@@ -252,8 +252,8 @@ export const Information: React.FC<Props> = ({
               is_honeypot={is_honeypot}
               buy_tax={buy_tax}
               sell_tax={sell_tax}
-              decimals={tokenResponse?.data?.decimals}
-              poolPriceResponse={poolPriceResponse}
+              // decimals={tokenResponse?.data?.decimals}
+              // poolPriceResponse={poolPriceResponse}
             />
 
             <InformationTable
@@ -265,12 +265,12 @@ export const Information: React.FC<Props> = ({
             />
           </div>
           <div className="w-full h-full sm:w-[47.5%] mt-4 sm:mt-0">
-            <InformationTrade
+            {/* <InformationTrade
               chainId={chainId}
               dex={dex}
               poolPriceResponse={poolPriceResponse}
               tokenInfoResponse={tokenInfoResponse}
-            />
+            /> */}
             <InformationOverview scanResponse={scanResponse} />
             <InformationTable
               chainExplorer={info.explorer}

@@ -62,7 +62,7 @@ export const StatusOrder: React.FC<Props> = ({
         <ModalHeader>
           Mixing Transaction - {concatId}{" "}
           <CopyOutlined
-            className="ml-2 cursor-pointer hover:text-indigo-600"
+            className="ml-2 cursor-pointer hover:text-lime-600"
             onClick={() => {
               copyContent(concatId);
             }}
