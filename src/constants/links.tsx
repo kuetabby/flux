@@ -1,5 +1,5 @@
 export const contractAddress = "0xc797e1261F2Bc71fD9DE3Ed1Ed14A60726eE70C5";
-export const pairAddress = "-";
+export const pairAddress = "0x10ae63b5c1440c0693775bb9d4d33fa11774c131";
 
 export const socialsLink = {
   whitepaper: "https://avernus-official.gitbook.io/avernusofficial",
