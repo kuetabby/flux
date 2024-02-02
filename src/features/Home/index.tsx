@@ -193,7 +193,11 @@ const Home: React.FC<Props> = () => {
                 features and functionalities before diving into the real action
               </CardBody>
               <CardFooter className="pt-0">
-                <Link href="/" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="/explorer.avernus.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     rightIcon={<ArrowRightOutlined />}
                     className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"

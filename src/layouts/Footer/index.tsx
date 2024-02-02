@@ -75,7 +75,12 @@ const AppFooter: React.FC<Props> = () => {
           <div className="w-full sm:w-[30%]">
             <div className="text-2xl font-bold">UTILITY</div>
             <div className="flex flex-col mt-2 font-semibold">
-              <Link href="/bridge" className="w-auto hover:!text-primary mb-2">
+              <Link
+                href="/explorer.avernus.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-auto hover:!text-primary mb-2"
+              >
                 Testnet
               </Link>
 

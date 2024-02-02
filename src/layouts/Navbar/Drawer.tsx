@@ -58,8 +58,8 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
         name: "Home",
       },
       {
-        href: "/explore",
-        pathname: `/explore`,
+        href: "/explorer.avernus.tech",
+        pathname: `/explorer.avernus.tech`,
         name: "Testnet",
       },
       // {
