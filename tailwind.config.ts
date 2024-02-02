@@ -52,7 +52,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       }),
       borderColor: {
-        primary: "#4caf50",
+        primary: "#55d3e5",
         secondary: "#154352",
 
         "dark-main": "#8F8686",

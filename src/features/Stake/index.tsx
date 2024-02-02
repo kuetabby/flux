@@ -304,7 +304,7 @@ const Stake: React.FC<Props> = () => {
     <div className="stakepage-container">
       <div className="h-10 lg:h-20" />
       <div className="w-full md:w-11/12 lg:w-4/5 h-full flex flex-wrap justify-between mx-auto relative">
-        <Card className="w-full md:w-3/5 bg-dark-secondary border-2 border-lime-500 text-white rounded-2xl">
+        <Card className="w-full md:w-3/5 bg-dark-secondary border-2 border-primary text-white rounded-2xl">
           <CardHeader className="text-xl sm:text-3xl !font-extrabold pb-4 text-white">
             <span className="stake-title">Avernus</span> Staking
           </CardHeader>
@@ -313,11 +313,11 @@ const Stake: React.FC<Props> = () => {
               <div>Balance: </div>
               <div>{displayTotalBalance}</div>
             </div>
-            <div className="w-full flex justify-between border-lime-500">
+            <div className="w-full flex justify-between border-primary">
               <div>Lock Period:</div>
               <div>14 days</div>
             </div>
-            <div className="w-full flex justify-between border-lime-500 mb-4">
+            <div className="w-full flex justify-between border-primary mb-4">
               <div>APY Rewards:</div>
               <div>{displayRewardRatio}</div>
             </div>
@@ -330,7 +330,7 @@ const Stake: React.FC<Props> = () => {
                 thousandSeparator=","
                 maxLength={18}
                 allowNegative={false}
-                className="w-full sm:w-[65%] my-2 rounded-lg py-1 focus:!border-lime-500 !shadow-none !outline-none"
+                className="w-full sm:w-[65%] my-2 rounded-lg py-1 focus:!border-primary !shadow-none !outline-none"
                 placeholder="Amount to Stake / Withdraw"
                 customInput={Input}
                 isDisabled={isLoadingStakingTokenBalance}
@@ -392,22 +392,20 @@ const Stake: React.FC<Props> = () => {
           <CardFooter className="text-sm font-bold">*APY is dynamic</CardFooter>
         </Card>
         <div className="w-full md:w-[35%] mt-6 md:mt-0">
-          <Card className="bg-dark-secondary border-2 border-lime-500 text-white font-semibold rounded-2xl">
-            <CardHeader className="pb-0 border-lime-500">
+          <Card className="bg-dark-secondary border-2 border-primary text-white font-semibold rounded-2xl">
+            <CardHeader className="pb-0 border-primary">
               Total Staked
             </CardHeader>
             <CardBody>{displayTotalStaked}</CardBody>
           </Card>
-          <Card className="bg-dark-secondary border-2 border-lime-500 my-6 text-white font-semibold rounded-2xl">
-            <CardHeader className="pb-0 border-lime-500">
+          <Card className="bg-dark-secondary border-2 border-primary my-6 text-white font-semibold rounded-2xl">
+            <CardHeader className="pb-0 border-primary">
               Total Rewards
             </CardHeader>
             <CardBody>{displayTotalRewards}</CardBody>
           </Card>
-          <Card className="bg-dark-secondary border-2 border-lime-500 text-white font-semibold rounded-2xl">
-            <CardHeader className="pb-0 border-lime-500">
-              Unlock Date
-            </CardHeader>
+          <Card className="bg-dark-secondary border-2 border-primary text-white font-semibold rounded-2xl">
+            <CardHeader className="pb-0 border-primary">Unlock Date</CardHeader>
             <CardBody>{displayUnlockDate}</CardBody>
           </Card>
         </div>

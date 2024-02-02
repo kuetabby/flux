@@ -43,7 +43,7 @@ const AppFooter: React.FC<Props> = () => {
 
           <div className="w-1/2 md:w-full text-right md:text-left md:mx-auto lg:mx-0">
             <Link
-              href={`https://app.uniswap.org/tokens/ethereum/${contractAddress}`}
+              href={findUsLink.uniswap}
               target="_blank"
               rel="noopener noreferrer"
             >
