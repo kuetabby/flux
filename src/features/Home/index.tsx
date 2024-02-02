@@ -194,7 +194,7 @@ const Home: React.FC<Props> = () => {
               </CardBody>
               <CardFooter className="pt-0">
                 <Link
-                  href="/explorer.avernus.tech"
+                  href="https://explorer.avernus.tech"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

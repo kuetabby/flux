@@ -32,8 +32,8 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
         name: "Home",
       },
       {
-        href: "/explorer.avernus.tech",
-        pathname: `/explorer.avernus.tech`,
+        href: "https://explorer.avernus.tech",
+        pathname: `https://explorer.avernus.tech`,
         name: "Testnet",
       },
       // {
