@@ -10,7 +10,6 @@
   @apply px-2;
 
   z-index: 1000;
-  /* background-color: var(--gray-footer); */
   transition: linear;
   transition-delay: 0.15s;
   transition-duration: 0.15s;
@@ -22,7 +21,7 @@
 }
 
 .navbar-scroll {
-  @apply py-2  bg-dark-secondary;
+  @apply py-2  bg-secondary opacity-95;
 }
 
 .navbar-title {

@@ -6,7 +6,8 @@ import {
   Button,
   Card,
   CardBody,
-  // CardHeader,
+  CardFooter,
+  CardHeader,
   // Divider,
   // List,
   // ListItem,
@@ -14,6 +15,7 @@ import {
 // import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
 import {
   ArrowRightOutlined,
+  // ArrowRightOutlined,
   ReadOutlined,
   // SearchOutlined,
 } from "@ant-design/icons";
@@ -23,11 +25,11 @@ import YinLoader from "@/components/Loader/Custom";
 import { useIsMounted } from "@/hooks/useIsMounted";
 // import { useCopyText } from "@/hooks/useCopyText";
 
-import { ecosystemList } from "./constants/ecosystem";
+// import { ecosystemList } from "./constants/ecosystem";
 import { contractAddress, findUsLink, socialsLink } from "@/constants/links";
 
 // import LogoApp from "@/assets/logo-app.png";
-import Banner_1 from "@/assets/banner-1.jpg";
+import Banner_1 from "@/assets/banner-1.png";
 
 import Dextools from "@/assets/dextools.png";
 import Dexscreener from "@/assets/dexscreener.png";
@@ -69,13 +71,13 @@ const Home: React.FC<Props> = () => {
           <div
             className={`w-full text-center mx-auto text-2xl xs:text-3xl md:text-4xl lg:text-5xl font-bold text-white`}
           >
-            Unleashing Privacy and Protection in Your DeFi Experience
+            Unlocking the Future of Blockchain Gaming with Avernus
           </div>
           <div
             className={`w-full text-center mx-auto text-md xs:text-lg lg:text-xl font-bold text-slate-400 py-4 lg:px-8`}
           >
-            Step into a World of Financial Liberation — Decrepify Ensures Every
-            Transaction is Shielded and Private
+            Embark on an Epic GameFi Journey with Avernus - Your Gateway to
+            Unleashed Gaming Power and Rewards
           </div>
 
           <div className="w-full text-center mx-auto mt-2">
@@ -99,13 +101,13 @@ const Home: React.FC<Props> = () => {
 
       {/* <div className="h-24 md:h-36" /> */}
 
-      <div id="features" className="h-20 sm:h-24 lg:h-36" />
+      {/* <div id="features" className="h-20 sm:h-24 lg:h-36" />
       <div className="w-full md:w-11/12 xl:w-3/4 flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white pt-4">
         <div className="flex flex-col justify-center items-center">
           <div
             className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
           >
-            Explore <span className="app-title mx-1">Decrepify</span> Ecosystem
+            Explore <span className="app-title mx-1">Avernus</span> Ecosystem
           </div>
         </div>
         <div className="w-full mt-6 px-2 sm:px-0">
@@ -144,7 +146,7 @@ const Home: React.FC<Props> = () => {
             </CardBody>
           </Card>
         </div>
-      </div>
+      </div> */}
 
       <div className="md:h-28" />
       <div id="about" className="h-10 sm:h-12 lg:h-18" />
@@ -153,36 +155,113 @@ const Home: React.FC<Props> = () => {
           <div
             className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
           >
-            About <span className="app-title mx-1">Decrepify</span>
+            <span className="app-title mx-1">Get Started</span>
           </div>
           <div
             className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-4 lg:px-8`}
           >
-            Decrepify is committed to redefining the DeFi experience by
-            providing a suite of utilities tailored to ensure both security and
-            privacy. Our platform is designed to cater to every facet of the
-            crypto journey, offering users a comprehensive range of tools to
-            navigate the decentralized financial landscape
+            Welcome to Avernus, where gaming meets blockchain in an
+            unprecedented fusion of technology and entertainment
+          </div>
+
+          <div
+            className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-4 lg:px-8`}
+          >
+            Our mission is to redefine the gaming landscape by offering a
+            versatile platform backed by cutting-edge technologies like testnet
+            simulations, staking mechanisms, and a robust mainnet infrastructure
           </div>
         </div>
       </div>
 
-      <div id="privacy" className="h-10 sm:h-12 lg:h-18" />
-      <div className="w-full md:w-4/5 flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
+      <div id="utility" className="h-10 sm:h-12 lg:h-18" />
+      <div className="w-full md:w-11/12 flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
         <div className="flex flex-col justify-center items-center">
           <div
             className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
           >
-            <span className="app-title mr-1">Privacy and Protection</span> at
-            the Core
+            The Core of <span className="app-title mx-1">Avernus</span>
           </div>
-          <div
-            className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-4 lg:px-8`}
-          >
-            Our commitment extends beyond security. With the Anonymous Bridge,
-            we prioritize privacy, enabling users to conduct transactions with a
-            shielded identity. Decrepify envisions a decentralized future where
-            financial activities are not just secure but also private
+          <div className="w-full flex flex-wrap justify-between mx-auto py-4 lg:px-8`">
+            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
+                Avernus Testnet
+              </CardHeader>
+              <CardBody className="text-white pt-0">
+                Explore the limitless possibilities of Avernus in a risk-free
+                environment. Our testnet allows you to experience the platform's
+                features and functionalities before diving into the real action
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Link href="/" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    rightIcon={<ArrowRightOutlined />}
+                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"
+                  >
+                    Learn more!
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
+                Avernus Staking
+              </CardHeader>
+              <CardBody className="text-white pt-0">
+                Elevate your engagement by staking your assets in Avernus. Earn
+                rewards, contribute to the network's security, and actively
+                participate in shaping the future of blockchain gaming
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Link href="/staking" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    rightIcon={<ArrowRightOutlined />}
+                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"
+                  >
+                    Learn more!
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
+                Avernus Mainnet
+              </CardHeader>
+              <CardBody className="text-white pt-0">
+                Transition from exploration to real gameplay on our robust
+                mainnet. Avernus leverages the power of the mainnet to provide a
+                secure and immersive gaming experience, bringing blockchain
+                gaming to new heights
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button
+                  rightIcon={<ArrowRightOutlined />}
+                  className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
+                >
+                  Learn more!
+                </Button>
+              </CardFooter>
+            </Card>
+            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
+                GameFi Platform
+              </CardHeader>
+              <CardBody className="text-white pt-0">
+                {/* Immerse yourself in the world of GameFi on the Avernus platform. */}
+                Our GameFi features blend traditional gaming elements with
+                blockchain technology, creating an ecosystem where your gaming
+                endeavors become part of a decentralized, player-centric
+                universe
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button
+                  rightIcon={<ArrowRightOutlined />}
+                  className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
+                >
+                  Learn more!
+                </Button>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </div>
@@ -199,32 +278,28 @@ const Home: React.FC<Props> = () => {
             className={`w-full sm:w-4/5 xl:w-3/5 flex flex-wrap justify-between text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 gap-2 py-4 lg:px-8`}
           >
             <div className="w-full sm:w-[47.5%]">
-              <div className="text-primary">Total Supply</div>
-              <div>100,000,000</div>
+              <div className="text-primary">Tax</div>
+              <div>5/5 Buy & Sell</div>
             </div>
 
             <div className="w-full sm:w-[47.5%]">
-              <div className="text-primary">Tax</div>
-              <div>5/5 Buy and Sell Tax</div>
+              <div className="text-primary">Total Supply</div>
+              <div>100,000,000</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="md:h-28" />
+      <div className="md:h-20" />
 
-      <div className="w-full h-full sm:h-[100vw] xl:h-[75vw] flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white relative">
-        <Image
-          src={Banner_1}
-          alt="banner-1"
-          className="w-full h-full object-fill"
-        />
-        <div className="w-full md:w-4/5 xl:w-[70%] flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white py-4 absolute top-0 sm:top-[10%] z-20">
+      <div id="findus" className="h-10 sm:h-12 lg:h-18" />
+      <div className="w-full md:w-4/5 mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 md:px-0 py-4">
+        <div className="flex flex-col justify-center items-center">
           <div
             className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-2`}
           >
             Find Us
           </div>
-          <div className="w-full flex flex-wrap justify-evenly items-center bg-black bg-opacity-40 rounded-2xl mt-6">
+          <div className="w-full flex flex-wrap justify-evenly items-center bg-dark-secondary rounded-2xl mt-6 py-2">
             <Link
               href={findUsLink.uniswap}
               target="_blank"
@@ -234,6 +309,18 @@ const Home: React.FC<Props> = () => {
               <Image
                 src={Uniswap}
                 alt="uniswap"
+                className="object-contain w-full h-full"
+              />
+            </Link>
+            <Link
+              href={findUsLink.etherscan}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-10"
+            >
+              <Image
+                src={Etherscan}
+                alt="etherscan"
                 className="object-contain w-full h-full"
               />
             </Link>
@@ -261,99 +348,36 @@ const Home: React.FC<Props> = () => {
                 className="object-contain w-full h-full"
               />
             </Link>
-
-            <Link
-              href={findUsLink.etherscan}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-10"
-            >
-              <Image
-                src={Etherscan}
-                alt="etherscan"
-                className="object-contain w-full h-full"
-              />
-            </Link>
-            {/* <Link
-              href={`/`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] mb-2 sm:mb-0 h-14"
-            >
-              <Image
-                src={Coingecko}
-                alt="coingecko"
-                className="object-cover w-full h-full"
-              />
-            </Link> */}
           </div>
-          {/* <div className="w-full flex flex-wrap justify-evenly items-center mt-6 bg-black bg-opacity-40 py-3 rounded-2xl">
-            <Link
-              href={`/`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-12"
-            >
-              <Image
-                src={Etherscan}
-                alt="etherscan"
-                className="object-contain w-full h-full"
-              />
-            </Link>
-            <Link
-              href={`/`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] mb-2 sm:mb-0 h-14"
-            >
-              <Image
-                src={Coingecko}
-                alt="coingecko"
-                className="object-cover w-full h-full"
-              />
-            </Link>
-          </div> */}
         </div>
+      </div>
+      <div className="md:h-28" />
 
-        <div
-          className={`w-full px-2 sm:px-8 lg:px-14 absolute top-[60%] sm:top-2/4 z-20`}
-        >
+      <div className="w-full h-[125vw] xs:h-[100vw] sm:h-[75vw] lg:h-[50vw] flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white relative">
+        <Image
+          src={Banner_1}
+          alt="banner-1"
+          className="w-full h-full brightness-50"
+        />
+
+        <div className={`w-full px-2 sm:px-8 lg:px-14 absolute top-1/2 z-20`}>
           <div
-            className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-2`}
+            className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-1`}
           >
-            Experience DeFi's Ultimate Haven
+            Start Your GameFi Adventure with Avernus
           </div>
           <div
-            className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-2`}
+            className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-1`}
           >
-            Join Decrepify Now!
+            Join Avernus Now!
           </div>
 
           {/* <div className="xs:h-10 sm:h-14" /> */}
 
-          <div className="w-full text-center mx-auto mt-8">
+          <div className="w-full text-center mx-auto mt-4">
             <ConnectWallet hideTestnetFaucet className="!h-12" />
           </div>
         </div>
-        {/* <div className="w-full md:w-4/5 flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white py-4 absolute top-[60%]">
-          <div className="flex flex-col justify-center items-center">
-            <div
-              className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
-            >
-              Embark on the <span className="app-title mx-1">Decrepify</span>{" "}
-              Journey
-            </div>
-            <div
-              className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-4 lg:px-8`}
-            >
-              Decrepify is not just a DeFi platform; it's a revolutionary step
-              towards financial liberation. Whether you're an experienced
-              investor or a newcomer to DeFi, Decrepify is your trusted
-              companion in navigating the decentralized world of finance. Join
-              us and experience the next era of decentralized finance
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

@@ -45,7 +45,7 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  border-left: 4px solid rgb(132 204 22);
+  border-left: 4px solid #55d3e5;
   border-bottom: 4px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }

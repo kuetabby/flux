@@ -1,7 +1,7 @@
 import Staking from "@/features/Stake";
 import type { Metadata } from "next";
 
-const app_name = "Staking | Decrepify";
+const app_name = "Staking | Avernus";
 
 export const metadata: Metadata = {
   title: `${app_name}`,

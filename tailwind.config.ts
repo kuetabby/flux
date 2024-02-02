@@ -13,16 +13,16 @@ module.exports = {
     },
     extend: {
       textColor: {
-        primary: "#76ff03",
-        secondary: "#b0bec5",
+        primary: "#55d3e5",
+        secondary: "#154352",
 
         "dark-main": "#0A0C11",
         "dark-secondary": "#27262c",
         "light-main": "#D2D6EE",
       },
       backgroundColor: {
-        primary: "#76ff03",
-        secondary: "#b0bec5",
+        primary: "#55d3e5",
+        secondary: "#154352",
 
         "dark-main": "#0A0C11",
         "dark-secondary": "#27262c",
@@ -39,9 +39,11 @@ module.exports = {
         "dark-fade":
           "linear-gradient(to right, #0A0C11, #131823, rgb(19, 24, 35))",
 
-        "silver-gray": "linear-gradient(to right, #4caf50, #b0bec5)",
+        // "silver-gray": "linear-gradient(to right, #, #4caf50)",
+        "silver-gray": "linear-gradient(to right, #55d3e5, #b0bec5)",
+
         "blue-sea": "linear-gradient(to right, #4caf50, #1565c0)",
-        "lime-zest": "linear-gradient(to right, #4caf50, #76ff03)",
+        "lime-zest": "linear-gradient(to right, #4caf50, #55d3e5)",
         "mystic-forest":
           "linear-gradient(135deg, rgba(76,175,80,1) 0%, rgba(27,94,32,1) 50%, rgba(27,94,32,1) 100%)",
 
@@ -51,7 +53,7 @@ module.exports = {
       }),
       borderColor: {
         primary: "#4caf50",
-        secondary: "#b0bec5",
+        secondary: "#154352",
 
         "dark-main": "#8F8686",
         "light-main": "#D2D6EE",

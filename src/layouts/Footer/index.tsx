@@ -11,7 +11,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { contractAddress, findUsLink, socialsLink } from "@/constants/links";
 import { spaceGrotesk } from "@/utils/font";
 
-import AppLogo from "@/assets/logo-app.png";
+import AppLogoTransparent from "@/assets/logo-transparent.png";
 // import TwitterLogo from "@/assets/logo-twitter.png";
 // import TelegramLogo from "@/assets/logo-telegram.png";
 // import MediumLogo from "@/assets/logo-medium.png";
@@ -35,9 +35,9 @@ const AppFooter: React.FC<Props> = () => {
         <div className="all-reserved">
           <div className="app-footer-title">
             <Image
-              src={AppLogo}
+              src={AppLogoTransparent}
               alt="app-logo"
-              className="w-full h-full object-contain"
+              className="w-full md:w-3/4 lg:w-[70%] h-full object-contain"
             />
           </div>
 
@@ -73,19 +73,15 @@ const AppFooter: React.FC<Props> = () => {
         <div className="w-full md:w-[70%] flex flex-wrap justify-between text-white max-w-lg">
           {/* <div className="w-full sm:w-1/2 flex flex-wrap order-0 sm:order-1 text-white"> */}
           <div className="w-full sm:w-[30%]">
-            <div className="text-2xl font-bold">ECOSYSTEM</div>
+            <div className="text-2xl font-bold">UTILITY</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link href="/bridge" className="w-auto hover:!text-primary mb-2">
-                Bridge
+                Testnet
               </Link>
 
-              <Link
-                // href="#features"
-                href="/auditor"
-                className="w-auto hover:!text-primary mb-2"
-              >
-                Auditor
-              </Link>
+              {/* <Link href="/bridge" className="w-auto hover:!text-primary mb-2">
+                Privacy Bridge
+              </Link> */}
 
               <Link
                 // href="#about"
@@ -96,28 +92,25 @@ const AppFooter: React.FC<Props> = () => {
               </Link>
 
               <Link
-                // href="#about"
                 href="/"
                 className="w-auto hover:!text-primary mb-2 pointer-events-none"
               >
-                Token Launcher
+                Mainnet
               </Link>
 
               <Link
-                // href="#about"
+                href="/"
+                className="w-auto hover:!text-primary mb-2 pointer-events-none"
+              >
+                GameFi Platform
+              </Link>
+
+              {/* <Link
                 href="/"
                 className="w-auto hover:!text-primary mb-2 pointer-events-none"
               >
                 Token Locker
-              </Link>
-
-              <Link
-                // href="#about"
-                href="/"
-                className="w-auto hover:!text-primary mb-2 pointer-events-none"
-              >
-                DeFi Platform
-              </Link>
+              </Link> */}
 
               {/* <Link
                 href="#tokens"
@@ -188,7 +181,7 @@ const AppFooter: React.FC<Props> = () => {
           </div>
 
           <div className="w-full sm:w-[30%]">
-            <div className="text-2xl font-bold">SOCIALS</div>
+            <div className="text-2xl font-bold">COMMUNITY</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link
                 href={socialsLink.telegram}
@@ -204,7 +197,7 @@ const AppFooter: React.FC<Props> = () => {
                 rel="noopener noreferrer"
                 className="w-auto hover:text-primary"
               >
-                Twitter
+                Twitter / X
               </Link>
               <Link
                 href={socialsLink.medium}
@@ -218,10 +211,11 @@ const AppFooter: React.FC<Props> = () => {
           </div>
         </div>
 
-        <div className="w-full flex order-2 items-center mt-4 text-slate-500">
+        <div className="w-full flex order-2 items-center mt-6 text-slate-300">
           <div className="text-xs font-semibold">
-            <CopyrightOutlined className="mx-1" style={{ fontSize: "1em" }} />
-            Decrepify 2024
+            Avernus{" "}
+            <CopyrightOutlined className="mx-1" style={{ fontSize: "1em" }} />{" "}
+            2024 | All Rights Reserved
           </div>
         </div>
       </div>

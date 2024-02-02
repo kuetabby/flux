@@ -58,15 +58,15 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
         name: "Home",
       },
       {
-        href: "/bridge",
-        pathname: `/bridge`,
-        name: "Bridge",
+        href: "/explore",
+        pathname: `/explore`,
+        name: "Testnet",
       },
-      {
-        href: "/auditor",
-        pathname: `/auditor`,
-        name: "Auditor",
-      },
+      // {
+      //   href: "/bridge",
+      //   pathname: `/bridge`,
+      //   name: "Bridge",
+      // },
       {
         href: "/staking",
         pathname: `/staking`,

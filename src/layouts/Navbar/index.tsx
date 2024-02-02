@@ -64,12 +64,12 @@ const Navbar: React.FC<Props> = () => {
   return (
     <div className={clsx("navbar-container", spaceGrotesk.className)}>
       <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}>
-        <div className="w-3/5 lg:w-1/2 flex items-center relative">
+        <div className="w-1/2 lg:w-2/5 flex items-center relative">
           <Link href="/" className={`logo-container text-white`}>
             <Image
               src={AppLogo}
               alt="app-logo"
-              className="w-16 h-16 rounded-full"
+              className="w-12 h-12 rounded-full"
             />
           </Link>
           <PageTabs containterClass="hidden sm:flex ml-2" />

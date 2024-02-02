@@ -32,15 +32,15 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
         name: "Home",
       },
       {
-        href: "/bridge",
-        pathname: `/bridge`,
-        name: "Bridge",
+        href: "/explore",
+        pathname: `/explore`,
+        name: "Testnet",
       },
-      {
-        href: "/auditor",
-        pathname: `/auditor`,
-        name: "Auditor",
-      },
+      // {
+      //   href: "/bridge",
+      //   pathname: `/bridge`,
+      //   name: "Bridge",
+      // },
       {
         href: "/staking",
         pathname: `/staking`,
@@ -54,7 +54,7 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
   }
 
   return (
-    <div className={clsx("w-72 justify-between items-center", containterClass)}>
+    <div className={clsx("w-64 justify-between items-center", containterClass)}>
       {tabsList.map((item) => {
         const isActive = !!defaultHash
           ? hashname === item.pathname
