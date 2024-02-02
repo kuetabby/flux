@@ -51,7 +51,7 @@ const AppFooter: React.FC<Props> = () => {
                 className="w-24 sm:w-36 bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray text-white rounded-2xl"
                 // leftIcon={<DollarOutlined style={{ fontSize: "1.5em" }} />}
               >
-                Buy $DRY
+                Buy $AVR
               </Button>
             </Link>
           </div>
