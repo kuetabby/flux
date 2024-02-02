@@ -10,7 +10,7 @@ import "./globals.css";
 const app_title = "";
 const app_name = "";
 const description =
-  "Explore Avernus, your gateway to an unparalleled gaming experience";
+  "Explore Avernus, Your Gateway to Unleashed Gaming Power and Rewards";
 
 export const metadata: Metadata = {
   title: app_title,
