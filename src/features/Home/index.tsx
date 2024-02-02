@@ -274,7 +274,7 @@ const Home: React.FC<Props> = () => {
       <div className="w-full md:w-4/5 mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
         <div className="flex flex-col justify-center items-center">
           <div
-            className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
+            className={`pt-2 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl`}
           >
             {contractAddress}
           </div>
