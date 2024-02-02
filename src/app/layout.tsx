@@ -9,7 +9,8 @@ import "./globals.css";
 
 const app_title = "";
 const app_name = "";
-const description = "Your gateway to enhanced DeFi privacy and protection";
+const description =
+  "Explore Avernus, your gateway to an unparalleled gaming experience";
 
 export const metadata: Metadata = {
   title: app_title,
