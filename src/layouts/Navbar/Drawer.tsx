@@ -27,7 +27,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { getHash } from "@/utils/hash";
 import useHash from "@/hooks/useHashname";
 
-import AppTitle from "@/assets/title-app.png";
+// import AppTitle from "@/assets/title-app.png";
 
 import "../style.css";
 import "./style.css";
@@ -36,9 +36,6 @@ interface Props {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const contractAddress = "0x00FEeF969243D9faB0913b6e97a24DC6341a986B";
-const pairAddress = "";
 
 export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
   const btnRef = useRef() as any;
@@ -58,19 +55,19 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
         name: "Home",
       },
       {
-        href: "https://explorer.avernus.tech",
-        pathname: `https://explorer.avernus.tech`,
-        name: "Testnet",
+        href: "/bridge",
+        pathname: `/bridge`,
+        name: "Bridge",
       },
-      // {
-      //   href: "/bridge",
-      //   pathname: `/bridge`,
-      //   name: "Bridge",
-      // },
       {
         href: "/staking",
         pathname: `/staking`,
         name: "Staking",
+      },
+      {
+        href: "/auditor",
+        pathname: `/auditor`,
+        name: "Auditor",
       },
     ];
   }, []);
@@ -95,11 +92,12 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
         />
         <DrawerHeader className="bg-dark-main h-24">
           <Link href="/" className={`logo-container text-white h-full`}>
-            <Image
+            <div className="font-extrabold text-5xl">FLUX-</div>
+            {/* <Image
               src={AppTitle}
               alt="title-logo"
               className="w-full h-full object-cover rounded-full"
-            />
+            /> */}
           </Link>
         </DrawerHeader>
 

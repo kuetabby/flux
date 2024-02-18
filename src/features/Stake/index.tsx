@@ -306,7 +306,7 @@ const Stake: React.FC<Props> = () => {
       <div className="w-full md:w-11/12 lg:w-4/5 h-full flex flex-wrap justify-between mx-auto relative">
         <Card className="w-full md:w-3/5 bg-dark-secondary border-2 border-primary text-white rounded-2xl">
           <CardHeader className="text-xl sm:text-3xl !font-extrabold pb-4 text-white">
-            <span className="stake-title">Avernus</span> Staking
+            <span className="stake-title">Flux</span> Staking
           </CardHeader>
           <CardBody className="w-full text-lg pt-4 pb-0 font-semibold">
             <div className="w-full flex justify-between text-xl sm:text-2xl mb-4">

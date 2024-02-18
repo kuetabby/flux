@@ -1,7 +1,7 @@
 import Home from "@/features/Home";
 import type { Metadata } from "next";
 
-const app_name = "Home | Avernus";
+const app_name = "Home | Flux";
 
 export const metadata: Metadata = {
   title: `${app_name}`,

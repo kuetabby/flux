@@ -133,7 +133,7 @@ const Scanner: React.FC<Props> = () => {
         <div className="w-full md:w-11/12 lg:w-[85%] mx-auto relative">
           <div className="w-full">
             <div className="text-xl sm:text-3xl !font-extrabold text-white">
-              <span className="scanner-title">Decrepify</span> Auditor
+              <span className="scanner-title">Flux</span> Auditor
             </div>
             <div className="text-lg sm:text-xl text-white mt-4 mb-1">
               Perform In-depth Smart Contract Analyses and Audits

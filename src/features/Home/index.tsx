@@ -71,13 +71,13 @@ const Home: React.FC<Props> = () => {
           <div
             className={`w-full text-center mx-auto text-2xl xs:text-3xl md:text-4xl lg:text-5xl font-bold text-white`}
           >
-            Unlocking the Future of Blockchain Gaming with Avernus
+            Welcome to Flux, your gateway to a world of secure and private
+            decentralized finance!
           </div>
           <div
             className={`w-full text-center mx-auto text-md xs:text-lg lg:text-xl font-bold text-slate-400 py-4 lg:px-8`}
           >
-            Embark on an Epic GameFi Journey with Avernus - Your Gateway to
-            Unleashed Gaming Power and Rewards
+            Flux goes beyond being a decentralized exchange
           </div>
 
           <div className="w-full text-center mx-auto mt-2">
@@ -160,220 +160,221 @@ const Home: React.FC<Props> = () => {
           <div
             className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-4 lg:px-8`}
           >
-            Welcome to Avernus, where gaming meets blockchain in an
-            unprecedented fusion of technology and entertainment
+            Founded on the principles of transparency, inclusivity, and user
+            empowerment, Flux strives to offer a seamless decentralized finance
+            experience
           </div>
 
           <div
-            className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-4 lg:px-8`}
+            className={`w-full text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 py-2 lg:px-8`}
           >
-            Our mission is to redefine the gaming landscape by offering a
-            versatile platform backed by cutting-edge technologies like testnet
-            simulations, staking mechanisms, and a robust mainnet infrastructure
+            We are committed to fostering a community where every user, whether
+            new or experienced, can explore the vast opportunities of
+            decentralized finance with confidence
           </div>
         </div>
       </div>
 
-      <div id="utility" className="h-10 sm:h-12 lg:h-18" />
-      <div className="w-full md:w-11/12 flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
-        <div className="flex flex-col justify-center items-center">
-          <div
-            className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
-          >
-            The Core of <span className="app-title mx-1">Avernus</span>
-          </div>
-          <div className="w-full flex flex-wrap justify-between mx-auto py-4 lg:px-8`">
-            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
-              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
-                Avernus Testnet
-              </CardHeader>
-              <CardBody className="text-white pt-0">
-                Explore the limitless possibilities of Avernus in a risk-free
-                environment. Our testnet allows you to experience the platform's
-                features and functionalities before diving into the real action
-              </CardBody>
-              <CardFooter className="pt-0">
-                <Link
-                  href="https://explorer.avernus.tech"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    rightIcon={<ArrowRightOutlined />}
-                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"
-                  >
-                    Learn more!
-                  </Button>
-                </Link>
-              </CardFooter>
-            </Card>
-            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
-              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
-                Avernus Staking
-              </CardHeader>
-              <CardBody className="text-white pt-0">
-                Elevate your engagement by staking your assets in Avernus. Earn
-                rewards, contribute to the network's security, and actively
-                participate in shaping the future of blockchain gaming
-              </CardBody>
-              <CardFooter className="pt-0">
-                <Link href="/staking" target="_blank" rel="noopener noreferrer">
-                  <Button
-                    rightIcon={<ArrowRightOutlined />}
-                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"
-                  >
-                    Learn more!
-                  </Button>
-                </Link>
-              </CardFooter>
-            </Card>
-            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
-              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
-                Avernus Mainnet
-              </CardHeader>
-              <CardBody className="text-white pt-0">
-                Transition from exploration to real gameplay on our robust
-                mainnet. Avernus leverages the power of the mainnet to provide a
-                secure and immersive gaming experience, bringing blockchain
-                gaming to new heights
-              </CardBody>
-              <CardFooter className="pt-0">
-                <Button
-                  rightIcon={<ArrowRightOutlined />}
-                  className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
-                >
-                  Learn more!
-                </Button>
-              </CardFooter>
-            </Card>
-            <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
-              <CardHeader className="text-primary font-semibold text-lg sm:text-2xl">
-                GameFi Platform
-              </CardHeader>
-              <CardBody className="text-white pt-0">
-                {/* Immerse yourself in the world of GameFi on the Avernus platform. */}
-                Our GameFi features blend traditional gaming elements with
-                blockchain technology, creating an ecosystem where your gaming
-                endeavors become part of a decentralized, player-centric
-                universe
-              </CardBody>
-              <CardFooter className="pt-0">
-                <Button
-                  rightIcon={<ArrowRightOutlined />}
-                  className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
-                >
-                  Learn more!
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-        </div>
-      </div>
-
-      <div id="contract" className="h-10 sm:h-12 lg:h-18" />
-      <div className="w-full md:w-4/5 mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
-        <div className="flex flex-col justify-center items-center">
-          <div
-            className={`pt-2 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl`}
-          >
-            {contractAddress}
-          </div>
-          <div
-            className={`w-full sm:w-4/5 xl:w-3/5 flex flex-wrap justify-between text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 gap-2 py-4 lg:px-8`}
-          >
-            <div className="w-full sm:w-[47.5%]">
-              <div className="text-primary">Tax</div>
-              <div>5/5 Buy & Sell</div>
+      <div className="w-full bg-gradient-right-primary bg-opacity-50">
+        <div id="utility" className="h-10 sm:h-12 lg:h-18" />
+        <div className="w-full md:w-11/12 flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
+          <div className="flex flex-col justify-center items-center">
+            <div
+              className={`pt-2 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
+            >
+              The Ecosystem of <span className="app-title mx-1">Flux</span>
             </div>
-
-            <div className="w-full sm:w-[47.5%]">
-              <div className="text-primary">Total Supply</div>
-              <div>100,000,000</div>
+            <div className="w-full flex flex-wrap justify-between mx-auto py-4 lg:px-8`">
+              <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+                <CardHeader className="text-white font-semibold text-lg sm:text-2xl">
+                  Privacy Bridge
+                </CardHeader>
+                <CardBody className="text-white pt-0 font-normal">
+                  Flux's Privacy Bridge ensures secure, anonymous asset
+                  transfers across different blockchains. Experience seamless
+                  cross-network transactions with enhanced privacy
+                </CardBody>
+                <CardFooter className="pt-0">
+                  <Link href="/bridge">
+                    <Button
+                      rightIcon={<ArrowRightOutlined />}
+                      className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"
+                    >
+                      Bridge Now
+                    </Button>
+                  </Link>
+                </CardFooter>
+              </Card>
+              <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+                <CardHeader className="text-white font-semibold text-lg sm:text-2xl">
+                  Staking
+                </CardHeader>
+                <CardBody className="text-white pt-0 font-normal">
+                  Stake your assets with Flux to secure the network and earn
+                  passive income. It's a simple way to contribute and be
+                  rewarded in the Flux ecosystem
+                </CardBody>
+                <CardFooter className="pt-0">
+                  <Link
+                    href="/staking"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      rightIcon={<ArrowRightOutlined />}
+                      className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray"
+                    >
+                      Stake Flux
+                    </Button>
+                  </Link>
+                </CardFooter>
+              </Card>
+              <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+                <CardHeader className="text-white font-semibold text-lg sm:text-2xl">
+                  Auditor
+                </CardHeader>
+                <CardBody className="text-white pt-0 font-normal">
+                  With Flux's Smart Contract Auditor, we ensure the security of
+                  decentralized applications. Our tools verify and fortify smart
+                  contracts for a safer blockchain experience
+                </CardBody>
+                <CardFooter className="pt-0">
+                  <Button
+                    rightIcon={<ArrowRightOutlined />}
+                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
+                  >
+                    Try Auditor
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">
+                <CardHeader className="text-white font-semibold text-lg sm:text-2xl">
+                  Launchpad
+                </CardHeader>
+                <CardBody className="text-white pt-0 font-normal">
+                  Flux's Launchpad lets you effortlessly launch custom tokens,
+                  fostering growth and diversity in the blockchain space.
+                  Empower your projects with Flux
+                </CardBody>
+                <CardFooter className="pt-0">
+                  <Button
+                    rightIcon={<ArrowRightOutlined />}
+                    isDisabled
+                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green pointer-events-none"
+                  >
+                    Coming Soon
+                  </Button>
+                </CardFooter>
+              </Card>
             </div>
           </div>
         </div>
-      </div>
-      <div className="md:h-20" />
 
-      <div id="findus" className="h-10 sm:h-12 lg:h-18" />
-      <div className="w-full md:w-4/5 mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 md:px-0 py-4">
-        <div className="flex flex-col justify-center items-center">
-          <div
-            className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-2`}
-          >
-            Find Us
-          </div>
-          <div className="w-full flex flex-wrap justify-evenly items-center bg-dark-secondary rounded-2xl mt-6 py-2">
-            <Link
-              href={findUsLink.uniswap}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-12"
+        <div id="contract" className="h-10 sm:h-12 lg:h-18" />
+        <div className="w-full md:w-4/5 mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 sm:px-0 py-4">
+          <div className="flex flex-col justify-center items-center">
+            <div
+              className={`pt-2 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl`}
             >
-              <Image
-                src={Uniswap}
-                alt="uniswap"
-                className="object-contain w-full h-full"
-              />
-            </Link>
-            <Link
-              href={findUsLink.etherscan}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-10"
+              CA :{contractAddress}
+            </div>
+            <div
+              className={`w-full sm:w-4/5 xl:w-3/5 flex flex-wrap justify-between text-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold text-slate-400 gap-2 py-4 lg:px-8`}
             >
-              <Image
-                src={Etherscan}
-                alt="etherscan"
-                className="object-contain w-full h-full"
-              />
-            </Link>
-            <Link
-              href={findUsLink.dextools}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-[15vw] xs:h-[12.5vw] sm:h-full"
-            >
-              <Image
-                src={Dextools}
-                alt="dextools"
-                className="object-contain w-full h-full"
-              />
-            </Link>
-            <Link
-              href={findUsLink.dexscreener}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-[6.75em] xl:w-[7.5em] mb-2 sm:mb-0 h-12"
-            >
-              <Image
-                src={Dexscreener}
-                alt="dexscreener"
-                className="object-contain w-full h-full"
-              />
-            </Link>
+              <div className="w-full sm:w-[47.5%]">
+                <div className="text-white">Tax</div>
+                <div>5/5 Buy & Sell</div>
+              </div>
+
+              <div className="w-full sm:w-[47.5%]">
+                <div className="text-white">Total Supply</div>
+                <div>100,000,000</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="md:h-28" />
+        <div className="md:h-20" />
 
-      <div className="w-full h-[125vw] xs:h-[100vw] sm:h-[75vw] lg:h-[50vw] flex flex-wrap justify-evenly sm:justify-center mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white relative">
-        <Image
+        <div id="findus" className="h-10 sm:h-12 lg:h-18" />
+        <div className="w-full md:w-4/5 mx-auto text-lg xs:text-xl lg:text-2xl font-extrabold text-white px-2 md:px-0 py-4">
+          <div className="flex flex-col justify-center items-center">
+            <div
+              className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-2`}
+            >
+              Find Us
+            </div>
+            <div className="w-full flex flex-wrap justify-evenly items-center bg-dark-secondary rounded-2xl mt-6 py-2">
+              <Link
+                href={findUsLink.uniswap}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-12"
+              >
+                <Image
+                  src={Uniswap}
+                  alt="uniswap"
+                  className="object-contain w-full h-full"
+                />
+              </Link>
+              <Link
+                href={findUsLink.etherscan}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-10"
+              >
+                <Image
+                  src={Etherscan}
+                  alt="etherscan"
+                  className="object-contain w-full h-full"
+                />
+              </Link>
+              <Link
+                href={findUsLink.dextools}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[6.75em] xl:w-[7.5em] my-2 sm:my-0 h-[15vw] xs:h-[12.5vw] sm:h-full"
+              >
+                <Image
+                  src={Dextools}
+                  alt="dextools"
+                  className="object-contain w-full h-full"
+                />
+              </Link>
+              <Link
+                href={findUsLink.dexscreener}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[6.75em] xl:w-[7.5em] mb-2 sm:mb-0 h-12"
+              >
+                <Image
+                  src={Dexscreener}
+                  alt="dexscreener"
+                  className="object-contain w-full h-full"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="md:h-28" />
+      </div>
+
+      <div className="join-now">
+        {/* <Image
           src={Banner_1}
           alt="banner-1"
           className="w-full h-full brightness-50"
-        />
+        /> */}
 
-        <div className={`w-full px-2 sm:px-8 lg:px-14 absolute top-1/2 z-20`}>
+        <div className={`w-full px-2 sm:px-8 lg:px-14 my-auto`}>
           <div
             className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-1`}
           >
-            Start Your GameFi Adventure with Avernus
+            Everyone New Favorite DeFi
           </div>
           <div
             className={`w-full text-center mx-auto text-xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-white py-1`}
           >
-            Join Avernus Now!
+            Join Now!
           </div>
 
           {/* <div className="xs:h-10 sm:h-14" /> */}

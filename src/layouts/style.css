@@ -35,8 +35,9 @@
 }
 
 .nav-anchor-active {
-  @apply bg-lime-zest font-bold;
+  @apply text-primary font-bold;
+  /* @apply bg-lime-zest font-bold;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }

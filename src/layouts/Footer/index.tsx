@@ -51,7 +51,7 @@ const AppFooter: React.FC<Props> = () => {
                 className="w-24 sm:w-36 bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray text-white rounded-2xl"
                 // leftIcon={<DollarOutlined style={{ fontSize: "1.5em" }} />}
               >
-                Buy $AVR
+                Buy $FLX
               </Button>
             </Link>
           </div>
@@ -73,61 +73,29 @@ const AppFooter: React.FC<Props> = () => {
         <div className="w-full md:w-[70%] flex flex-wrap justify-between text-white max-w-lg">
           {/* <div className="w-full sm:w-1/2 flex flex-wrap order-0 sm:order-1 text-white"> */}
           <div className="w-full sm:w-[30%]">
-            <div className="text-2xl font-bold">UTILITY</div>
+            <div className="text-2xl font-bold text-primary">ECOSYSTEM</div>
             <div className="flex flex-col mt-2 font-semibold">
-              <Link
-                href="https://explorer.avernus.tech"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-auto hover:!text-primary mb-2"
-              >
-                Testnet
-              </Link>
-
-              {/* <Link href="/bridge" className="w-auto hover:!text-primary mb-2">
+              <Link href="/bridge" className="w-auto hover:!text-primary mb-2">
                 Privacy Bridge
-              </Link> */}
-
-              <Link
-                // href="#about"
-                href="/staking"
-                className="w-auto hover:!text-primary mb-2"
-              >
+              </Link>
+              <Link href="/staking" className="w-auto hover:!text-primary mb-2">
                 Staking
               </Link>
-
-              <Link
-                href="/"
-                className="w-auto hover:!text-primary mb-2 pointer-events-none"
-              >
-                Mainnet
+              <Link href="/auditor" className="w-auto hover:!text-primary mb-2">
+                Auditor
               </Link>
 
               <Link
                 href="/"
                 className="w-auto hover:!text-primary mb-2 pointer-events-none"
               >
-                GameFi Platform
+                Launchpad
               </Link>
-
-              {/* <Link
-                href="/"
-                className="w-auto hover:!text-primary mb-2 pointer-events-none"
-              >
-                Token Locker
-              </Link> */}
-
-              {/* <Link
-                href="#tokens"
-                className="w-auto hover:!text-primary mb-2"
-              >
-                Tokenomics
-              </Link> */}
             </div>
           </div>
 
           <div className="w-full sm:w-[30%] md:w-auto my-4 sm:my-0">
-            <div className="text-2xl font-bold">SUPPORT</div>
+            <div className="text-2xl font-bold text-primary">SUPPORT</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link
                 href={findUsLink.etherscan}
@@ -186,7 +154,7 @@ const AppFooter: React.FC<Props> = () => {
           </div>
 
           <div className="w-full sm:w-[30%]">
-            <div className="text-2xl font-bold">COMMUNITY</div>
+            <div className="text-2xl font-bold text-primary">COMMUNITY</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link
                 href={socialsLink.telegram}
@@ -218,7 +186,7 @@ const AppFooter: React.FC<Props> = () => {
 
         <div className="w-full flex order-2 items-center mt-6 text-slate-300">
           <div className="text-xs font-semibold">
-            Avernus{" "}
+            Flux{" "}
             <CopyrightOutlined className="mx-1" style={{ fontSize: "1em" }} />{" "}
             2024 | All Rights Reserved
           </div>

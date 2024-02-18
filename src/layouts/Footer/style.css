@@ -1,5 +1,5 @@
 .app-footer {
-  @apply w-full p-0 text-black bg-secondary opacity-95 relative;
+  @apply w-full p-0 text-black bg-[#27262c] opacity-95 relative;
 }
 
 .app-footer-wrapper {

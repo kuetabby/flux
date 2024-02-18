@@ -21,7 +21,7 @@
 }
 
 .navbar-scroll {
-  @apply py-2  bg-secondary opacity-95;
+  @apply py-2  bg-[#27262c];
 }
 
 .navbar-title {

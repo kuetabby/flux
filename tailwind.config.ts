@@ -13,16 +13,16 @@ module.exports = {
     },
     extend: {
       textColor: {
-        primary: "#55d3e5",
-        secondary: "#154352",
+        primary: "#1c4c31",
+        secondary: "#b0bec5",
 
         "dark-main": "#0A0C11",
         "dark-secondary": "#27262c",
         "light-main": "#D2D6EE",
       },
       backgroundColor: {
-        primary: "#55d3e5",
-        secondary: "#154352",
+        primary: "#1c4c31",
+        secondary: "#b0bec5",
 
         "dark-main": "#0A0C11",
         "dark-secondary": "#27262c",
@@ -39,11 +39,17 @@ module.exports = {
         "dark-fade":
           "linear-gradient(to right, #0A0C11, #131823, rgb(19, 24, 35))",
 
+        "gradient-right-primary":
+          "linear-gradient(rgba(0,0,0,1) 0%, rgba(28,76,49,1) 50%, rgba(0,0,0,1) 100%)",
+        // "linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(28,76,49,1) 100%)",
+        "gradient-circle-primary":
+          "radial-gradient(circle at center, rgba(0,0,0,1), rgba(28,  76,  49,  0.5), rgba(28,  76,  49,  1)  100%)",
+
         // "silver-gray": "linear-gradient(to right, #, #4caf50)",
-        "silver-gray": "linear-gradient(to right, #55d3e5, #b0bec5)",
+        "silver-gray": "linear-gradient(to right, #1c4c31, #b0bec5)",
 
         "blue-sea": "linear-gradient(to right, #4caf50, #1565c0)",
-        "lime-zest": "linear-gradient(to right, #4caf50, #55d3e5)",
+        "lime-zest": "linear-gradient(to right, #4caf50, #1c4c31)",
         "mystic-forest":
           "linear-gradient(135deg, rgba(76,175,80,1) 0%, rgba(27,94,32,1) 50%, rgba(27,94,32,1) 100%)",
 
@@ -52,8 +58,8 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       }),
       borderColor: {
-        primary: "#55d3e5",
-        secondary: "#154352",
+        primary: "#1c4c31",
+        secondary: "#b0bec5",
 
         "dark-main": "#8F8686",
         "light-main": "#D2D6EE",

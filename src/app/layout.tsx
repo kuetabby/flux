@@ -10,7 +10,7 @@ import "./globals.css";
 const app_title = "";
 const app_name = "";
 const description =
-  "Explore Avernus, Your Gateway to Unleashed Gaming Power and Rewards";
+  "Experience the evolution of decentralized finance with Flux. All in one platform. Join the Flux revolution in DeFi";
 
 export const metadata: Metadata = {
   title: app_title,
