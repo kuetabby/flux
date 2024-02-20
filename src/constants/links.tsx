@@ -1,11 +1,12 @@
-export const contractAddress = "";
+export const contractAddress = "0xBA700d66Ec93bF96AeB693c163aCAf277Ca5A903";
 export const pairAddress = "";
 
 export const socialsLink = {
-  whitepaper: "",
-  twitter: "https://x.com/",
-  telegram: "https://t.me/",
-  medium: "https://medium.com/@",
+  whitepaper: "https://flux-official.gitbook.io/fluxofficial",
+  twitter: "https://x.com/Flux_Coin",
+  telegram: "https://t.me/FluxCoinOfficial",
+  medium: "https://medium.com/@fluxofficial_82879",
+  email: "mailto:FluxOfficial@Fluxtoken.net",
 };
 
 export const findUsLink = {

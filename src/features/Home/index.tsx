@@ -239,12 +239,18 @@ const Home: React.FC<Props> = () => {
                   contracts for a safer blockchain experience
                 </CardBody>
                 <CardFooter className="pt-0">
-                  <Button
-                    rightIcon={<ArrowRightOutlined />}
-                    className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
+                  <Link
+                    href="/auditor"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Try Auditor
-                  </Button>
+                    <Button
+                      rightIcon={<ArrowRightOutlined />}
+                      className="text-white bg-lime-zest hover:bg-silver-gray active:bg-silver-gray focus:bg-silver-gray disabled:forest-green"
+                    >
+                      Try Auditor
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
               <Card className="bg-transparent border border-white w-full sm:w-[47.5%] xl:w-[24%] mb-3 xl:mb-0">

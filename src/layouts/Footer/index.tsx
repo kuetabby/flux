@@ -98,7 +98,7 @@ const AppFooter: React.FC<Props> = () => {
             <div className="text-2xl font-bold text-primary">SUPPORT</div>
             <div className="flex flex-col mt-2 font-semibold">
               <Link
-                href={findUsLink.etherscan}
+                href={socialsLink.email}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-auto hover:!text-primary mb-2"
