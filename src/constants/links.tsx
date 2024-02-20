@@ -1,5 +1,5 @@
 export const contractAddress = "0xBA700d66Ec93bF96AeB693c163aCAf277Ca5A903";
-export const pairAddress = "";
+export const pairAddress = "0xEBDD473b62d05073E1B197bCb3b5493B946D7f92";
 
 export const socialsLink = {
   whitepaper: "https://flux-official.gitbook.io/fluxofficial",
